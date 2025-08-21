@@ -1,0 +1,15 @@
+name: Github-python-code-check
+run-name: '{Github.name} is testing Github Actions'
+on:
+  push:
+    branches-ignore: 
+      -'main' # dont run the workflow when pushed to main ###### This has to be removed later; this is temporary for initial code
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run a script
+        run: echo "This workflow runs on pushes to branches other than main!"
