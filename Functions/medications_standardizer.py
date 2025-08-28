@@ -3,7 +3,7 @@ import time
 import requests
 import re
 
-class standardize_medication:
+class MedicationsStandardizer:
     def convert_rxcui_to_ATC(self, rxcui: int, ATC_level: int) -> list:
         '''
         Converts an RxCUI code to a list of ATC codes of the specified level.
