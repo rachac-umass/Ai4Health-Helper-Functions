@@ -82,7 +82,7 @@ class standardize_medication():
         '''
         if len(ndc) == 11:
             return ndc
-        assert len(ndc) == 13, 'The digit length is neither'
+        assert len(ndc) == 13, 'The ndc code length is not 13 (10 digits + 3 hypens)'
         digits = re.sub(r'\D', '', ndc)
         if len(digits) != 10:
             raise ValueError("Input must contain exactly 10 digits.")
