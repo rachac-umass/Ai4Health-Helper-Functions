@@ -7,10 +7,13 @@ A collection of Python utilities to standardize, map, and convert medical codes 
 ## Features
 
 - **ICD Code Standardization:**  
-  Convert and standardize ICD-9 and ICD-10 codes, map ICD codes to PheWAS (PheCode) codes.
+  - Convert and standardize ICD-9 and ICD-10 codes
+  - Map ICD codes to PheWAS (PheCode) codes
 
 - **Medication Standardization:**  
-  Convert between RxCUI, ATC, and NDC identifiers, extract active ingredient information, and standardize NDC code formats.
+  - Convert between RxCUI, ATC, and NDC identifiers
+  - Extract active ingredient information
+  - Standardize NDC code formats
 
 ---
 
@@ -52,9 +55,9 @@ phewas_code = icd.icd_codes_to_phewas_codes('E11.9', icd_type=10)
 See [`Functions/medications_standardizer.py`](Functions/medications_standardizer.py):
 
 ```python
-from Functions.medications_standardizer import standardize_medication
+from Functions.medications_standardizer import MedicationsStandardizer
 
-med = standardize_medication()
+med = MedicationsStandardizer()
 # Convert RxCUI to ATC
 atc_codes = med.convert_rxcui_to_ATC(1049630, ATC_level=4)
 # Find active ingredients for RxCUI
@@ -92,6 +95,7 @@ These should be downloaded and placed in the `Datasets` directory as shown.
 ## Contributing
 
 Pull requests and issues are welcome! Please open an issue to discuss major changes before PRs.
+
 ---
 
 ## Acknowledgements
@@ -99,7 +103,6 @@ Pull requests and issues are welcome! Please open an issue to discuss major chan
 - [PheWAS Catalog](https://phewascatalog.org/)
 - [RxNav API](https://rxnav.nlm.nih.gov/)
 - [icdmappings Python package](https://pypi.org/project/icd-mappings/)
-
 
 ## To-Do(s)
 - Create workflow actions to test functionalities
