@@ -7,13 +7,10 @@ A collection of Python utilities to standardize, map, and convert medical codes 
 ## Features
 
 - **ICD Code Standardization:**  
-  Convert and standardize ICD-9 and ICD-10 codes, map ICD codes to PheWAS (PheCode) codes for phenotype analysis.
+  Convert and standardize ICD-9 and ICD-10 codes, map ICD codes to PheWAS (PheCode) codes.
 
 - **Medication Standardization:**  
   Convert between RxCUI, ATC, and NDC identifiers, extract active ingredient information, and standardize NDC code formats.
-
-- **Ready for Data Pipelines:**  
-  Designed for integration into AI/ML health data pipelines and EHR preprocessing.
 
 ---
 
