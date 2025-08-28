@@ -95,13 +95,6 @@ These should be downloaded and placed in the `Datasets` directory as shown.
 ## Contributing
 
 Pull requests and issues are welcome! Please open an issue to discuss major changes before PRs.
-
----
-
-## License
-
-Distributed under the MIT License.
-
 ---
 
 ## Acknowledgements
