@@ -6,9 +6,9 @@ from icdmappings import Mapper
 class ICDStandardizer:
     def __init__(self):
         # Load the data files containing mappings between ICD codes and Phecodes.
-        self.icd10_phe = pl.read_csv('./icd_code_to_phecode/Phecode_map_v1_2_icd10cm_beta.csv')
-        self.icd9_phe_v1 = pl.read_csv('./icd_code_to_phecode/phecode_map_v1_2_icd9.csv', infer_schema_length=100000)
-        self.icd9_phe_v2 = pyreadr.read_r("./icd_code_to_phecode/phemap (1).rda")['phemap'].drop_duplicates(subset=['icd9'])
+        self.icd10_phe = pl.read_csv('../Datasets/Phecode_map_v1_2_icd10cm_beta.csv')
+        self.icd9_phe_v1 = pl.read_csv('../Datasets/phecode_map_v1_2_icd9.csv', infer_schema_length=100000)
+        self.icd9_phe_v2 = pyreadr.read_r("../Datasets/phemap (1).rda")['phemap'].drop_duplicates(subset=['icd9'])
         
         # Create dictionaries for mapping ICD codes to Phecodes.
         self.icd10_phe_dict = dict(zip(self.icd10_phe['ICD10CM'].to_list(), self.icd10_phe['PHECODE'].to_list()))
