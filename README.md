@@ -30,7 +30,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 > **Note:**  
-> You may need to install additional dependencies such as `pandas`, `polars`, `pyreadr`, `requests`, `numpy`, and `icdmappings`.
+> You may need to install additional dependencies such as  `polars`, `pyreadr`, `requests`, `numpy`, and `icdmappings`.
 
 ---
 
