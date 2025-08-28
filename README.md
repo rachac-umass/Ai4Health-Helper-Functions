@@ -101,7 +101,7 @@ Pull requests and issues are welcome! Please open an issue to discuss major chan
 
 - [PheWAS Catalog](https://phewascatalog.org/)
 - [RxNav API](https://rxnav.nlm.nih.gov/)
-- [icdmappings Python package](https://pypi.org/project/icdmappings/)
+- [icdmappings Python package]([https://pypi.org/project/icdmappings/](https://pypi.org/project/icd-mappings/))
 
 
 ## To-Do(s)
